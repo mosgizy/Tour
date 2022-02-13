@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --header: #102a42;
+    --primary: #49a6e9;
+    --button: #bb2525;
+    --light-gray: #ebf7ff;
+    --main: #f1f5f8;
+    --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 20rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--header);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main);
+    font-family: "Roboto", sans-serif;
+}
+
+.App {
+    width: 90vw;
+    max-width: 620px;
+    margin-block-start: 5rem;
+}
+
+.title-head {
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 3.5px;
+    font-size: 2.55rem;
+    position: relative;
+    margin-block-end: 4rem;
+    padding-block-end: .8rem;
+}
+
+.loader {
+    margin-block-start: 5rem;
+    font-size: 3.5rem;
+}
+
+.title-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: .25rem;
+    width: 95px;
+    background-color: var(--primary);
+}
+
+.tour-wrapper {
+    background-color: var(--white);
+    border-radius: 5px;
+    margin-block-end: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+.content {
+    padding: 1.5rem 2rem;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1.5px;
+    margin-block-end: 1.5rem;
+}
+
+.price {
+    background-color: var(--light-gray);
+    padding: .3rem .6rem;
+    border-radius: 5px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.about {
+    color: #617d98;
+    line-height: 1.5;
+    display: inline;
+}
+
+.link {
+    display: inline;
+    color: var(--primary);
+    cursor: pointer;
+    margin-inline-start: .3rem;
+    text-transform: capitalize;
+    font-size: .85rem;
+}
+
+.btn-wrapper {
+    margin-block-start: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    outline: none;
+    border: 1px solid var(--button);
+    border-radius: 3.5px;
+    width: 200px;
+    margin: auto;
+    padding: .3rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--button);
+    background-color: var(--white);
+    text-transform: capitalize;
+}
+
+.no-tours {
+    margin-block-start: 5rem;
+}
+
+.refresh {
+    outline: none;
+    border-radius: 6px;
+    background-color: var(--primary);
+    padding: .3rem 1.2rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: var(--white);
+}
